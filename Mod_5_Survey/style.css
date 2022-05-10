@@ -2,21 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
-  background-color: rgba(0, 90, 90, 0.105);
+  background-color: rgba(60, 67, 67, 0.105);
   display: flex;
-  width: 500px;
+  padding-top: 10px;
+  width: 100vw;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .flex {
   width: auto;
   height: auto;
-  background-color: rgba(51, 51, 142, 0.119);
+  background-color: rgba(51, 51, 142, 0.041);
 }
 
 .formbox {
   align-items: center;
+}
+
+.submit {
+  font-weight: bolder;
 }
