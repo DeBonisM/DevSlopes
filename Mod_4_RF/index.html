@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark DeBonis Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <h3>Registration Form</h3>
+        <br />
+        <hr />
+        <br />
+        <h4>Tell us everything</h4>
+        <br />
+        <div class="box">
+          <form action="/action.php" target="_blank">
+            <!-- <label for="Name">First Name</label><br /> -->
+            <input name="firstname" type="text" placeholder="First Name" />
+            <br /><br />
+            <input name="lastname" type="text" placeholder="Last Name" />
+            <br /><br />
+
+            <input name="gender" id="male" type="radio" value="male" />
+            <label for="male">Male</label>
+
+            <input name="gender" id="female" type="radio" value="female" />
+            <label for="female">Female</label>
+
+            <input name="gender" id="other" type="radio" value="other" />
+            <label for="other">Other</label>
+
+            <br /><br />
+
+            <input type="email" placeholder="Email" />
+            <br /><br />
+
+            <label for="number">Phone Number</label><br />
+            <input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            />
+            <input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            /><input
+              id="number"
+              type="text"
+              placeholder="xxx"
+              maxlength="3"
+              size="1"
+            />
+
+            <br /><br />
+
+            <label for="date">Date of Birth</label><br />
+            <input id="date" type="date" />
+
+            <br /><br />
+
+            <label for="household">Household Size</label><br />
+            <input
+              type="text"
+              id="household"
+              size="1"
+              maxlength="10"
+            /><br /><br />
+
+            <label for="income">Annual Income</label><br />
+            <select name="income" id="income">
+              <option value="1">$1</option>
+              <option value="2">$2</option>
+              <option value="3">$3</option>
+              <option value="4">$4</option>
+              <option value="5">$5</option>
+            </select>
+
+            <br /><br />
+
+            <label for="comments">Why you should make more $/year</label> <br />
+            <textarea
+              rows="5"
+              cols="30"
+              name="comments"
+              placeholder="Vent here..."
+            ></textarea>
+            <br /><br />
+
+            <label for="password">Password*</label><br />
+            <input type="password" id="password" />
+            <br />
+            <label for="confirmpassword">Confirm Password*</label><br />
+            <input type="password" id="confirmpassword" /> <br /><br />
+            <input type="checkbox" name="legal" id="checkbox" />
+            <label for="legal">
+              Click this box if you understand
+              <span><a href="./">Here if you don't.</a></span>
+            </label>
+
+            <br /><br />
+
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
