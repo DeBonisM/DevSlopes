@@ -1,0 +1,22 @@
+.hollywood {
+  text-align: center;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+table {
+  width: 100%;
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+td {
+  padding: 10px 10px;
+}
