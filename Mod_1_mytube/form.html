@@ -4,7 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Tube Upload Page</title>
+    <title>Page 1</title>
   </head>
-  <body></body>
+  <body>
+    <div class="nav_wrapper" style="text-align: center">
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/pages/CollectionOne.html">Collection 1</a>
+        <a href="/pages/CollectionTwo.html">Collection 2</a>
+        <a href="/pages/CollectionThree.html">Collection 3</a>
+        <a href="form.html">New Video</a>
+      </nav>
+      <hr width="50%" />
+    </div>
+
+    <!--Table-->
+    <!--Video 1-->
+    <!--Video 2-->
+    <!--Video 3-->
+    <!--Footer-->
+
+    <h1 style="text-align: center">Go and Upload Yourself!</h1>
+    <div
+      class="uploadbox"
+      style="width: 350px; margin-left: auto; margin-right: auto"
+    >
+      <br />
+
+      <form action="/submitpage.php" target="_blank" style="width: 150px">
+        <label for="videotitle"> <h4 style="margin: 0">Video Title</h4> </label>
+
+        <input type="text" id="videotitle" />
+        <br /><br />
+
+        <label for="descripition">
+          <h4 style="margin: 0">Description</h4>
+        </label>
+
+        <!-- <label for="descripition">Description</label><br /> -->
+
+        <textarea
+          name="description"
+          id="descripition"
+          cols="30"
+          rows="5"
+          placeholder="Tell us about your gold!!!"
+        ></textarea
+        ><br /><br />
+        <label for="videosubmit"> <h4 style="margin: 0">Video</h4> </label>
+        <input type="file" value="videosubmit" /><br /><br /><br />
+
+        <select name="genre" id="genre">
+          <option value="placeholder" selected>
+            What level of humor do you rank this?
+          </option>
+          <option value="comedy">Comedy</option>
+          <option value="funny_comedy">Funny Comedy</option>
+          <option value="like_for_real_funny">Like, for real funny</option>
+          <option value="bro">Bro!!!</option>
+          <option value="dead">Dead</option>
+          <option value="so_funny_you_just_say_thats_funny">
+            So funny you just say "that's funny"
+          </option>
+        </select>
+        <br /><br />
+
+        <div style="width: 350px; margin-left: 40%">
+          <label for="radio"
+            ><h5 style="margin: 0">Who thinks you are funny?</h5></label
+          >
+
+          <input name="parent" type="radio" id="mom" value="mom" />
+          <label for="mom">Mom</label>
+
+          <input name="parent" type="radio" id="dad" value="dad" />
+          <label for="dad">Dad</label>
+        </div>
+        <br />
+        <div style="width: 350px">
+          <input type="submit" value="Upload Video" />
+        </div>
+      </form>
+    </div>
+    <br /><br /><br /><br />
+    <hr width="50%" />
+
+    <div class="footer" style="text-align: center">
+      <footer class="nav">
+        <a href="/">Home</a>
+        <a href="/pages/CollectionOne.html">Collection 1</a>
+        <a href="/pages/CollectionTwo.html">Collection 2</a>
+        <a href="/pages/CollectionThree.html">Collection 3</a>
+        <a href="form.html">New Video</a>
+      </footer>
+    </div>
+  </body>
 </html>
