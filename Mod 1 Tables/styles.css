@@ -1,22 +1,64 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  letter-spacing: 1.5px;
+  font-family: monospace;
+}
+
+ol {
+  padding: 0;
+  list-style: none;
+}
+
 .hollywood {
   text-align: center;
 }
 
 img {
-  width: 150px;
+  max-width: 150px;
   height: 150px;
+  border-radius: 10px;
 }
 
 table {
-  width: 100%;
+  table-layout: fixed;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 table,
-th,
 tr,
 td {
-  border: 1px solid black;
+  border: 1px dashed black;
   text-align: center;
 }
+
+th {
+  border: 1px dashed black;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
 td {
-  padding: 10px 10px;
+  padding: 0px 10px;
+}
+
+.pro {
+  color: red;
+}
+
+.pro_header {
+  color: rgb(3, 82, 73);
+}
+
+.con {
+  color: blue;
+}
+
+.con_header {
+  color: rgba(253, 27, 76, 1);
+}
+
+.top {
+  color: black;
 }
