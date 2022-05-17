@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 150px;
+}
+
+.title {
+  margin-bottom: 0.5em;
+}
+
+.years_alive {
+  margin-bottom: 0.3em;
+}
+
+.pic,
+.bio {
+  width: 900px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.one_line {
+  margin-bottom: 3px;
+}
+
+.picture {
+  padding: 5px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.bio {
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.1em;
+}
+
+.quote {
+  background-color: rgba(233, 248, 123, 0.1);
+  font-size: small;
+  font-weight: 500;
+  margin-bottom: 0.1em;
+  border-top: 1px solid grey;
+  width: 900px;
+  text-align: center;
+}
+
+td {
+  width: 300px;
+  max-width: 300px;
+}
+
+th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table {
+  table-layout: auto;
+  width: 900px;
+}
