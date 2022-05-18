@@ -6,9 +6,14 @@
 }
 
 body {
+  background-color: antiquewhite;
   display: flex;
   flex-direction: column;
-
+  background-image: url(https://www.nicepng.com/png/detail/11-110488_vector-stripes-racing-racing-stripes-png.png);
+  background-attachment: fixed;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: top-left;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -61,16 +66,23 @@ img {
 }
 
 td {
+  text-align: center;
+  padding: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.105);
+  border-radius: 5%;
   width: 300px;
   max-width: 300px;
+  font-style: italic;
 }
 
 th {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
 }
 
 table {
+  border-spacing: 5px 15px;
+  border-collapse: separate;
   table-layout: auto;
   width: 900px;
 }
