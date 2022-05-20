@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mark DeBonis Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="title_contain">
+      <h3 class="formname">Devslopes Survey Form</h3>
+      <h5>
+        <em> Thank you for taking the time to help improve the platform </em>
+      </h5>
+    </div>
+
     <div class="container">
-      <!-- <div class="flex">
-        <h3>Registration Form</h3>
+      <div class="flex">
+        <!--
         <br />
         <hr />
         <br />
@@ -26,14 +40,15 @@
             <input name="email" type="text" placeholder="Email" size="50" />
             <br /><br />
 
-<label for="age">Age (required)</label>
-<br>
-            <input type="text" name="age"
-            placeholder="Age" size="50" />
+            <label for="age">Age<em>(required)</em></label>
+            <br />
+            <input type="text" name="age" placeholder="Age" size="50" />
 
             <br /><br />
 
-             <label for="currentRole">What option best describes your current role?</label><br />
+            <label for="currentRole"
+              >What option best describes your current role?</label
+            ><br />
             <select name="currentRole" id="currentRole">
               <option value="Student">Student</option>
               <option value="FullTimeJob">Full Time Job</option>
@@ -41,18 +56,27 @@
               <option value="PreferNottoSay">Prefer Not to Say</option>
               <option value="Other">Other</option>
             </select>
-<br><br>
-            <label for="radioLabel">Would you recommend Devslopes to a friend?</label><br>
-            <input name="choice" id="definitely" type="radio" value="definitely" />
-            <label for="definitely">Definitely</label> <br>
+            <br /><br />
+            <label for="radioLabel"
+              >Would you recommend Devslopes to a friend?</label
+            ><br />
+            <input
+              name="choice"
+              id="definitely"
+              type="radio"
+              value="definitely"
+            />
+            <label for="definitely">Definitely</label> <br />
 
             <input name="choice" id="maybe" type="radio" value="maybe" />
-            <label for="maybe">Maybe</label> <br>
+            <label for="maybe">Maybe</label> <br />
 
             <input name="choice" id="notSure" type="radio" value="notSure" />
-            <label for="notSure">Not Sure</label> <br>
-<br>
-  <label for="favFeature">What is you favorite feature of Devslopes?</label><br />
+            <label for="notSure">Not Sure</label> <br />
+            <br />
+            <label for="favFeature"
+              >What is you favorite feature of Devslopes?</label
+            ><br />
             <select name="favFeature" id="favFeature">
               <option value="challenges">Challenges</option>
               <option value="projects">Projects</option>
@@ -60,39 +84,55 @@
               <option value="mentorship">Mentorship</option>
               <option value="Other">Other</option>
             </select>
-<br><br>
-<label for="improvements">What would you like to see improved?<span class="checkall">(Check all that apply)</span>
-</label> <br>
-<input type="checkbox" name="frontendprojects" id="frontendprojects">
-<label for="frontendprojects">Front-end Projects</label> <br>
+            <br /><br />
+            <label for="improvements"
+              >What would you like to see improved?<span class="checkall"
+                >(Check all that apply)</span
+              >
+            </label>
+            <br />
+            <input
+              type="checkbox"
+              name="frontendprojects"
+              id="frontendprojects"
+            />
+            <label for="frontendprojects">Front-end Projects</label> <br />
 
-<input type="checkbox" name="backendprojects" id="backendprojects">
-<label for="backendprojects">Back-end Projects</label> <br>
+            <input
+              type="checkbox"
+              name="backendprojects"
+              id="backendprojects"
+            />
+            <label for="backendprojects">Back-end Projects</label> <br />
 
-<input type="checkbox" name="challenges" id="challenges">
-<label for="challenges">Challenges</label> <br>
+            <input type="checkbox" name="challenges" id="challenges" />
+            <label for="challenges">Challenges</label> <br />
 
-<input type="checkbox" name="videos" id="videos">
-<label for="videos">Videos</label> <br>
+            <input type="checkbox" name="videos" id="videos" />
+            <label for="videos">Videos</label> <br />
 
-<input type="checkbox" name="onlinemeetups" id="onlinemeetups">
-<label for="onlinemeetups">Online Meetups</label> <br>
+            <input type="checkbox" name="onlinemeetups" id="onlinemeetups" />
+            <label for="onlinemeetups">Online Meetups</label> <br />
 
+            <input type="checkbox" name="community" id="community" />
 
-<input type="checkbox" name="community" id="community">
-<label for="community">Community</label> <br>
+            <label for="community">Community</label> <br /><br />
 
+            <label for="comments">Any comments or suggestions?</label> <br />
 
+            <textarea
+              name="comments"
+              id="comments"
+              cols="50"
+              rows="5"
+              placeholder="Enter your comments here..."
+              style="padding: 5px"
+            ></textarea>
 
+            <br />
+            <input id="submit" type="submit" />
 
-
-
-
-
-
-
-
-<!-- 
+            <!-- 
             <label for="number">Phone Number</label><br />
             <input
               id="number"
