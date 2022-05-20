@@ -13,12 +13,12 @@ button {
   outline: none;
 }
 
-html {
-  height: 100vh;
-  width: 100vw;
-}
+/* html {
+} */
 
 body {
+  height: 100vh;
+  width: 100%;
   position: relative;
 }
 
@@ -42,6 +42,7 @@ button:focus {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  flex: 1;
 }
 
 .nav {
@@ -93,8 +94,8 @@ iframe,
 /* footer */
 
 .footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: inherit;
+  display: inherit;
+  justify-content: flex-end;
   position: absolute;
 }
