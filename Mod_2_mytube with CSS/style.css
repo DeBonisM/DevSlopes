@@ -10,6 +10,8 @@ html {
 
 a {
   text-decoration: none;
+  color: rgb(44, 44, 44);
+  letter-spacing: 1.3px;
 }
 
 li {
@@ -23,6 +25,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(247, 236, 236);
+  color: rgb(12, 12, 12);
 }
 
 .main_wrapper {
@@ -32,23 +36,9 @@ body {
   /* border: 5px solid black; */
 }
 
-.table_wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 400px;
-}
-
-.iframe_home {
-  width: 250px;
-  height: 150px;
-  padding-left: 15px;
-}
-
 .nav_bg {
   position: relative;
-  background-color: rgba(135, 199, 255, 0.477);
+  background-color: rgba(39, 41, 42, 0.477);
   min-width: 100%;
   /* border-radius: 5px; */
   height: 175px;
@@ -56,27 +46,44 @@ body {
 }
 
 .nav {
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  top: 150px;
-  width: fit-content;
-  border: 5px solid saddlebrown;
+  top: 25px;
+  max-width: fit-content;
+  /* border: 1px solid rgba(226, 202, 184, 0.537); */
   padding: 15px;
-  background-color: rgb(169, 169, 169);
+
+  /* background-color: rgba(248, 243, 243, 0.386); */
 }
 
 .nav_bar {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 300px;
+  min-width: fit-content;
   /* border: 1px solid black; */
   justify-content: space-evenly;
 }
 
+.home_butt,
+.standup_butt,
+.sketches_butt,
+.friends_butt,
+.newvideo_butt {
+  margin-bottom: 5px;
+}
+
+.nav_bar a:hover {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* search bar */
+
 .search {
-  top: 50px;
-  width: 100%;
+  position: absolute;
+  top: 120px;
+  margin-left: 5px;
+  width: fit-content;
 }
 
 .searchbar::placeholder {
@@ -88,7 +95,7 @@ body {
   border-style: none;
   outline-style: none;
   box-shadow: none;
-  border-color: transparent;
+  border-color: none;
 }
 
 .search_wrap {
@@ -100,7 +107,7 @@ body {
 
 .searchbar {
   width: 300px;
-  background-color: aqua;
+  background-color: rgba(201, 201, 201, 0.61);
   border: none;
   padding: 10px;
   color: black;
@@ -111,9 +118,11 @@ body {
 .search_button {
   position: relative;
   right: 3px;
-  top: 12.9px;
-  background-color: aquamarine;
+  top: 14px;
+  background-color: rgb(209, 209, 209);
+  border: 1px solid beige;
 }
+/* search bar */
 
 .main {
   display: flex;
@@ -153,6 +162,20 @@ body {
   max-height: 400px;
   overflow-y: scroll;
   /* border: 5px solid blue; */
+}
+
+.table_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+.iframe_home {
+  width: 200px;
+  height: 150px;
+  padding-left: 15px;
 }
 
 .footer {
