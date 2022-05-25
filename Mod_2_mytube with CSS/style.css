@@ -264,3 +264,76 @@ body {
 .follow_button > a {
   color: aliceblue;
 }
+
+/* sketch page */
+
+.video1_sketchcomedy,
+.video2_sketchcomedy,
+.video3_sketchcomedy,
+.video4_sketchcomedy,
+.video5_sketchcomedy,
+.video6_sketchcomedy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.td_sketchcomedy {
+  width: 200px;
+  height: 200px;
+}
+
+.table_wrap_sketchcomedy {
+  margin-top: 25px;
+}
+/* title */
+
+.h1_standup_container,
+.follow_standup_container,
+.h1_mytube_container,
+.h1_sketch_container {
+  width: 100%;
+  position: relative;
+}
+
+/* title */
+
+.standup_h1,
+.mytube_h1,
+.sketchcomedy_h1 {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1.3px;
+  font-size: 50px;
+  width: fit-content;
+  margin-left: auto;
+  /* margin-right: auto; */
+  position: relative;
+  top: 0px;
+}
+/* title */
+
+.follow_standup {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1.3px;
+  font-size: 14px;
+  width: fit-content;
+  margin-left: auto;
+  /* margin-right: auto; */
+  position: absolute;
+  bottom: -39;
+  right: 5px;
+}
+
+.follow_button {
+  color: rgb(255, 255, 255);
+  background-color: crimson;
+  border: 0;
+  border-radius: 5px;
+  width: 150px;
+  padding: 5px;
+}
+
+.follow_button > a {
+  color: aliceblue;
+}
