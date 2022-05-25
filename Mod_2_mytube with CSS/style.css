@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* border: 5px solid black; */
+}
+
+.table_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+.iframe_home {
+  width: 250px;
+  height: 150px;
+  padding-left: 15px;
+}
+
+.nav_bg {
+  position: relative;
+  background-color: rgba(135, 199, 255, 0.477);
+  min-width: 100%;
+  /* border-radius: 5px; */
+  height: 175px;
+  border-bottom: 5px solid rgba(255, 0, 0, 0.112);
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 150px;
+  width: fit-content;
+  border: 5px solid saddlebrown;
+  padding: 15px;
+  background-color: rgb(169, 169, 169);
+}
+
+.nav_bar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+}
+
+.search {
+  top: 50px;
+  width: 100%;
+}
+
+.searchbar::placeholder {
+  color: rgba(0, 0, 0, 0.518);
+  opacity: 80%;
+}
+
+.searchbar:focus {
+  border-style: none;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.search_wrap {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchbar {
+  width: 300px;
+  background-color: aqua;
+  border: none;
+  padding: 10px;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  border: 1px solid beige;
+}
+.search_button {
+  position: relative;
+  right: 3px;
+  top: 12.9px;
+  background-color: aquamarine;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.scroll {
+  margin-left: auto;
+  /* display: flex;
+  align-content: center; */
+  width: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  /* border: 5px solid red; */
+}
+
+.video1_scroll {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_content {
+  width: 900px;
+  /* border: 5px solid green; */
+}
+
+.other_videos {
+  margin-left: auto;
+  /* display: flex;
+  align-content: center; */
+  width: 300px;
+  max-height: 400px;
+  overflow-y: scroll;
+  /* border: 5px solid blue; */
+}
+
+.footer {
+  margin-top: 5px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
