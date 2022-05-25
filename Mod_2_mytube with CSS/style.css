@@ -218,14 +218,17 @@ body {
 .table_wrap_standup {
   margin-top: 25px;
 }
-
+/* title */
 .h1_standup_container,
-.follow_standup_container {
+.follow_standup_container,
+.h1_mytube_container {
   width: 100%;
   position: relative;
 }
+/* title */
 
-.standup_h1 {
+.standup_h1,
+.mytube_h1 {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 1.3px;
   font-size: 50px;
@@ -235,6 +238,7 @@ body {
   position: relative;
   top: 0px;
 }
+/* title */
 
 .follow_standup {
   font-family: "Alfa Slab One", cursive;
