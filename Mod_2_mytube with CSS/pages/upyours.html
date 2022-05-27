@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Up Yours!</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Requirements:
+150 lines minimum of CSS.
+
+Stylesheet file name must follow common naming convention. (i.e: style.css, styles.css, index.css, main.css)
+
+Group common styles
+Reuse class selectors (i.e. create a class, and use it on multiple elements for common styling)
+
+Home Page must be styled
+
+All 3 collection pages must be styled
+
+Upload video page and form must be styled. All elements of the form must be styled.
+
+Style three (3) of the eighteen (18) "video details". This can be the three (3) videos from the home page.
+
+The website functionality/navigation should work the same as it did in Module 1 assignment.
+
+HTML must follow a consistent indentation pattern. (HTML style guide)
+
+CSS must follow a consistent indentation pattern.
+
+Post a screenshot of your finished project to the #post-your-projects channel in the chatroom -->
+
+    <div class="main_wrapper">
+      <div class="nav_bg">
+        <div class="search">
+          <div class="search_wrap">
+            <input
+              class="searchbar"
+              type="text"
+              name="searchbar"
+              id="searchbar"
+              placeholder="Search"
+            />
+            <a href="http://www.youtube.com" target="_blank">
+              <img
+                class="search_button"
+                width="38px"
+                src="https://friconix.com/png/fi-xtluhl-magnifying-glass-thin.png"
+                alt="mag"
+            /></a>
+          </div>
+        </div>
+        <div class="h1_friends_container">
+          <h1 class="friends_h1">UP Yours!</h1>
+        </div>
+        <div class="follow_standup_container">
+          <h4 class="follow_standup">
+            <button class="follow_button">
+              <a href="http://google.com"> stay up to date </a>
+            </button>
+          </h4>
+        </div>
+      </div>
+
+      <!--   nav_bg/ -->
+
+      <!-- nav -->
+      <div class="main">
+        <div class="nav">
+          <ul class="nav_bar">
+            <a class="home_butt" href="/"
+              ><img
+                width="35.5px"
+                src="https://icon-library.com/images/home-icon-png-transparent/home-icon-png-transparent-12.jpg"
+                alt=""
+              />
+            </a>
+
+            <a class="standup_butt" href="/pages/standup.html">
+              <img
+                src="https://images.vexels.com/media/users/3/184290/isolated/lists/fe0a00eadb2b0480065cd7c0fc11efe4-music-microphone-icon.png"
+                width="35.5px"
+                alt="microphone"
+              />
+            </a>
+            <a class="sketches_butt" href="/pages/sketch.html">
+              <img
+                src="https://icons-for-free.com/download-icon-show+theatre+icon-1320184694260509030_256.ico"
+                alt="sketch"
+                width="35.5px"
+              />
+            </a>
+            <a class="friends_butt" href="/pages/friends.html">
+              <img
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/friends-1528981-1296153.png"
+                width="35.5px"
+                alt="friends"
+              />
+            </a>
+
+            <a class="newvideo_butt" href="/form.html">
+              <img
+                src="https://icons.iconarchive.com/icons/icons8/ios7/256/Very-Basic-Upload-icon.png"
+                alt="upload"
+                width="35.5px"
+              />
+            </a>
+          </ul>
+          <!-- nav /-->
+        </div>
+
+        <!-- main content -->
+
+        <div class="main_content_upyours">
+          <form action="/submitpage.php" target="_blank">
+            <label for="videotitle">
+              <h4 style="margin: 0">Video Title</h4>
+            </label>
+
+            <input type="text" id="videotitle" />
+            <br /><br />
+
+            <label for="descripition">
+              <h4 style="margin: 0">Description</h4>
+            </label>
+
+            <!-- <label for="descripition">Description</label><br /> -->
+
+            <textarea
+              name="description"
+              id="descripition"
+              cols="30"
+              rows="5"
+              placeholder="Tell us about your gold!!!"
+            ></textarea
+            ><br /><br />
+            <label for="videosubmit"> <h4 style="margin: 0">Video</h4> </label>
+            <input type="file" value="videosubmit" /><br /><br /><br />
+
+            <select name="genre" id="genre">
+              <option value="placeholder" selected>
+                What level of humor do you rank this?
+              </option>
+              <option value="comedy">Comedy</option>
+              <option value="funny_comedy">Funny Comedy</option>
+              <option value="like_for_real_funny">Like, for real funny</option>
+              <option value="bro">Bro!!!</option>
+              <option value="dead">Dead</option>
+              <option value="so_funny_you_just_say_thats_funny">
+                So funny you just say "that's funny"
+              </option>
+            </select>
+            <br /><br />
+
+            <div style="width: 350px">
+              <label for="radio"
+                ><h5 style="margin: 0">Who thinks you are funny?</h5></label
+              >
+
+              <input name="parent" type="radio" id="mom" value="mom" />
+              <label for="mom">Mom</label>
+
+              <input name="parent" type="radio" id="dad" value="dad" />
+              <label for="dad">Dad</label>
+            </div>
+            <br />
+            <div class="submitbutt">
+              <input type="submit" value="Upload Video" />
+            </div>
+          </form>
+        </div>
+
+        <!--     main_content/ -->
+
+        <!--     other_videos/ -->
+      </div>
+
+      <!--   main/ -->
+    </div>
+    <!-- main_wrapper/ -->
+
+    <!-- footer -->
+
+    <div class="footer">
+      <footer class="footer_nav">
+        <!-- <a href="/">Home</a>
+        <a href="/pages/CollectionOne.html">Stand Up</a>
+        <a href="/pages/CollectionTwo.html">Sketches</a>
+        <a href="/pages/CollectionThree.html">Friends</a>
+        <a href="/form.html">New Video</a> <br> -->
+        &copy; Copyright 2022
+      </footer>
+    </div>
+
+    <!-- footer/ -->
+  </body>
+</html>

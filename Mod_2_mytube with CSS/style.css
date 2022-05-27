@@ -9,6 +9,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 14px;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
@@ -39,12 +40,61 @@ body {
   color: rgb(12, 12, 12);
 }
 
+/* title */
+.h1_standup_container,
+.follow_standup_container,
+.h1_mytube_container {
+  width: 100%;
+  position: relative;
+}
+/* title */
+
+.standup_h1,
+.mytube_h1 {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1.3px;
+  font-size: 50px;
+  width: fit-content;
+  margin-left: auto;
+  /* margin-right: auto; */
+  position: relative;
+  top: 0px;
+}
+/* title */
+
+.follow_standup {
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 1.3px;
+  font-size: 14px;
+  width: fit-content;
+  margin-left: auto;
+  /* margin-right: auto; */
+  position: absolute;
+  bottom: -39;
+  right: 5px;
+}
+
+.follow_button > a:hover {
+  color: black;
+}
+
+.follow_button:hover {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 .main_wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   /* border: 5px solid black; */
 }
+
+/* nav */
 
 .nav_bg {
   position: relative;
@@ -84,10 +134,35 @@ body {
   margin-bottom: 5px;
 }
 
+.home_butt:hover:after {
+  content: "home";
+}
+
+.standup_butt:hover::after {
+  content: "stand-up";
+  white-space: nowrap;
+}
+
+.sketches_butt:hover::after {
+  content: "sketches";
+}
+
+.friends_butt:hover::after {
+  content: "friends";
+}
+
+.newvideo_butt:hover::after {
+  content: "up yours";
+  /* display: flex; */
+  white-space: nowrap;
+}
+
 .nav_bar a:hover {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+/* nav end */
 
 /* search bar */
 
@@ -163,8 +238,10 @@ body {
 }
 
 .main_content {
+  background-color: rgba(248, 240, 255, 0.776);
+  margin-top: 5px;
   width: 900px;
-  /* border: 5px solid green; */
+  border: 1px groove rgba(166, 236, 244, 0.377);
 }
 
 .other_videos {
@@ -217,39 +294,6 @@ body {
 
 .table_wrap_standup {
   margin-top: 25px;
-}
-/* title */
-.h1_standup_container,
-.follow_standup_container,
-.h1_mytube_container {
-  width: 100%;
-  position: relative;
-}
-/* title */
-
-.standup_h1,
-.mytube_h1 {
-  font-family: "Alfa Slab One", cursive;
-  letter-spacing: 1.3px;
-  font-size: 50px;
-  width: fit-content;
-  margin-left: auto;
-  /* margin-right: auto; */
-  position: relative;
-  top: 0px;
-}
-/* title */
-
-.follow_standup {
-  font-family: "Alfa Slab One", cursive;
-  letter-spacing: 1.3px;
-  font-size: 14px;
-  width: fit-content;
-  margin-left: auto;
-  /* margin-right: auto; */
-  position: absolute;
-  bottom: -39;
-  right: 5px;
 }
 
 .follow_button {
