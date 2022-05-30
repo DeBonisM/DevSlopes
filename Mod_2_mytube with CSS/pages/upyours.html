@@ -32,8 +32,13 @@ CSS must follow a consistent indentation pattern.
 
 Post a screenshot of your finished project to the #post-your-projects channel in the chatroom -->
 
-    <div class="main_wrapper">
+    <!-- main wrapper  -->
+
+    <div class="main_wrapper main_wrapper_upyours">
+      <!-- Nav Header  -->
       <div class="nav_bg">
+        <!-- search bar  -->
+
         <div class="search">
           <div class="search_wrap">
             <input
@@ -52,6 +57,9 @@ Post a screenshot of your finished project to the #post-your-projects channel in
             /></a>
           </div>
         </div>
+
+        <!-- search bar /  -->
+
         <div class="h1_friends_container">
           <h1 class="friends_h1">UP Yours!</h1>
         </div>
@@ -68,7 +76,7 @@ Post a screenshot of your finished project to the #post-your-projects channel in
 
       <!-- nav -->
       <div class="main">
-        <div class="nav">
+        <div class="nav" style="display: none">
           <ul class="nav_bar">
             <a class="home_butt" href="/"
               ><img
@@ -114,62 +122,68 @@ Post a screenshot of your finished project to the #post-your-projects channel in
         <!-- main content -->
 
         <div class="main_content_upyours">
-          <form action="/submitpage.php" target="_blank">
-            <label for="videotitle">
-              <h4 style="margin: 0">Video Title</h4>
-            </label>
+          <div class="submit_contain">
+            <form action="/submitpage.php" target="_blank" class="submitform">
+              <label for="videotitle">
+                <h4 style="margin: 0"></h4>
+              </label>
 
-            <input type="text" id="videotitle" />
-            <br /><br />
+              <input type="text" id="videotitle" placeholder="Video Title" />
+              <br /><br />
 
-            <label for="descripition">
-              <h4 style="margin: 0">Description</h4>
-            </label>
+              <label for="descripition">
+                <h4 style="margin: 0"></h4>
+              </label>
 
-            <!-- <label for="descripition">Description</label><br /> -->
+              <!-- <label for="descripition">Description</label><br /> -->
 
-            <textarea
-              name="description"
-              id="descripition"
-              cols="30"
-              rows="5"
-              placeholder="Tell us about your gold!!!"
-            ></textarea
-            ><br /><br />
-            <label for="videosubmit"> <h4 style="margin: 0">Video</h4> </label>
-            <input type="file" value="videosubmit" /><br /><br /><br />
+              <textarea
+                name="description"
+                id="descripition"
+                cols="30"
+                rows="5"
+                placeholder="Tell us about your gold!!!"
+              ></textarea
+              ><br /><br />
+              <label for="videosubmit">
+                <h4 style="margin: 0">Video</h4>
+              </label>
+              <input type="file" value="videosubmit" /><br /><br />
 
-            <select name="genre" id="genre">
-              <option value="placeholder" selected>
-                What level of humor do you rank this?
-              </option>
-              <option value="comedy">Comedy</option>
-              <option value="funny_comedy">Funny Comedy</option>
-              <option value="like_for_real_funny">Like, for real funny</option>
-              <option value="bro">Bro!!!</option>
-              <option value="dead">Dead</option>
-              <option value="so_funny_you_just_say_thats_funny">
-                So funny you just say "that's funny"
-              </option>
-            </select>
-            <br /><br />
+              <select name="genre" id="genre">
+                <option value="placeholder" selected>
+                  What level of humor do you rank this?
+                </option>
+                <option value="comedy">Comedy</option>
+                <option value="funny_comedy">Funny Comedy</option>
+                <option value="like_for_real_funny">
+                  Like, for real funny
+                </option>
+                <option value="bro">Bro!!!</option>
+                <option value="dead">Dead</option>
+                <option value="so_funny_you_just_say_thats_funny">
+                  So funny you just say "that's funny"
+                </option>
+              </select>
+              <br />
 
-            <div style="width: 350px">
-              <label for="radio"
-                ><h5 style="margin: 0">Who thinks you are funny?</h5></label
-              >
+              <div style="width: 350px">
+                <label for="radio"
+                  ><h5 style="margin: 0">Who thinks you are funny?</h5></label
+                >
 
-              <input name="parent" type="radio" id="mom" value="mom" />
-              <label for="mom">Mom</label>
+                <input name="parent" type="radio" id="mom" value="mom" />
+                <label for="mom">Mom</label>
 
-              <input name="parent" type="radio" id="dad" value="dad" />
-              <label for="dad">Dad</label>
-            </div>
-            <br />
-            <div class="submitbutt">
-              <input type="submit" value="Upload Video" />
-            </div>
-          </form>
+                <input name="parent" type="radio" id="dad" value="dad" />
+                <label for="dad">Dad</label>
+              </div>
+              <br />
+              <div class="submitbutt">
+                <input type="submit" value="Upload Video" />
+              </div>
+            </form>
+          </div>
         </div>
 
         <!--     main_content/ -->
@@ -182,14 +196,13 @@ Post a screenshot of your finished project to the #post-your-projects channel in
     <!-- main_wrapper/ -->
 
     <!-- footer -->
-
     <div class="footer">
       <footer class="footer_nav">
-        <!-- <a href="/">Home</a>
-        <a href="/pages/CollectionOne.html">Stand Up</a>
-        <a href="/pages/CollectionTwo.html">Sketches</a>
-        <a href="/pages/CollectionThree.html">Friends</a>
-        <a href="/form.html">New Video</a> <br> -->
+        <a href="/">Home</a>
+        <a href="/pages/standup.html">Stand Up</a>
+        <a href="/pages/sketch.html">Sketches</a>
+        <a href="/pages/friends.html">Friends</a>
+        <a href="/pages/upyours.html">New Video</a> <br />
         &copy; Copyright 2022
       </footer>
     </div>
