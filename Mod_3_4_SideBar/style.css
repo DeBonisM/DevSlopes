@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0px auto;
+  position: relative;
+  top: 40px;
+  width: 300px;
+  border-width: 5px 10px 5em 3em;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container img {
+  width: 25px;
+}
+
+span {
+  margin-top: 3px;
+  margin-left: 5px;
+  font-weight: bolder;
+  letter-spacing: 1.2px;
+}
+
+.sidebar {
+  font-family: "Chelsea Market", cursive;
+  letter-spacing: 1.2px;
+  font-size: 2rem;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.box2:hover,
+a:hover {
+  width: 100%;
+  color: white;
+  background-color: lightblue;
+}
+
+.container > :first-child,
+:last-child {
+  align-self: center;
+}
+
+.home_icon,
+.aboutme_icon,
+.portfolio_icon,
+.contactme_icon {
+  display: flex;
+}
+
+.picbio_contain {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.profilepic > img {
+  margin-top: 15px;
+  border-radius: 50%;
+  width: 150px;
+}
+
+.name {
+  margin-bottom: 5px;
+}
+
+.user_name {
+  font-size: 1.3rem;
+}
