@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+/* bold roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  max-width: 300px;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.one,
+.two,
+.onef,
+.twof {
+  margin: 0px 5px;
+}
+
+.three {
+  margin: 0px 15px 0px auto;
+}
+
+.threef {
+  margin: 0px 5px;
+}
+
+.fourf {
+  margin-left: auto;
+}
+
+.four,
+.five,
+.six,
+.fourf,
+.fivef,
+.sixf {
+  margin-right: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "header header header"
+    "logo logo logo"
+    "searchbar searchbar searchbar "
+    "searchbutton searchbutton searchbutton "
+    "footer footer footer";
+}
+
+.header {
+  width: 100%;
+  align-self: flex-start;
+  grid-area: header;
+  justify-self: center;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav {
+  align-items: center;
+}
+
+.nav > li {
+  font-weight: 400px;
+  font-size: 0.7rem;
+}
+
+.nav,
+.footer_nav {
+  width: 100%;
+  display: flex;
+}
+
+/* .five img {
+  background-color: grey;
+} */
+
+.five img,
+.six img {
+  margin-top: 5px;
+  max-width: 25px;
+  border-radius: 50%;
+}
+
+.logo {
+  justify-self: center;
+  grid-area: logo;
+}
+
+.searchbar {
+  grid-area: searchbar;
+  justify-self: center;
+}
+
+.searchbar > input {
+  width: 460px;
+  height: 30px;
+  border: 1.5px solid silver;
+  border-radius: 25px;
+  padding-left: 50px;
+}
+
+.buttons {
+  grid-area: searchbutton;
+  justify-self: center;
+  position: relative;
+}
+
+.buttons > .searchbutton,
+.feelinglucky {
+  /*   border: 1px solid black ; */
+  border-radius: 1px;
+}
+
+.mag {
+  position: absolute;
+  top: -70px;
+  left: -125px;
+  z-index: 111;
+}
+
+.micro {
+  position: absolute;
+  right: -125px;
+  top: -65.5px;
+}
+
+span {
+  background-color: #f5f5f5;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-size: 0.7rem;
+  padding: 5px;
+}
+
+.footer_nav {
+  width: 100%;
+}
+
+footer {
+  padding: 5px 0px;
+  background-color: lightgrey;
+  width: 100%;
+  grid-area: footer;
+  justify-self: center;
+  align-self: flex-end;
+}
