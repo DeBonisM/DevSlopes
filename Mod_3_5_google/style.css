@@ -116,42 +116,22 @@ nav {
   grid-area: logo;
 }
 
-.searchbar {
-  grid-area: searchbar;
-  justify-self: center;
-}
-
-.searchbar > input {
-  width: 460px;
-  height: 30px;
-  border: 1.5px solid silver;
-  border-radius: 25px;
-  padding-left: 50px;
-}
-
-.buttons {
+.search_buttons {
   grid-area: searchbutton;
   justify-self: center;
-  position: relative;
 }
 
-.buttons > .searchbutton,
+.button_wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search_buttons > .searchbutton,
 .feelinglucky {
   /*   border: 1px solid black ; */
   border-radius: 1px;
-}
-
-.mag {
-  position: absolute;
-  top: -70px;
-  left: -125px;
-  z-index: 111;
-}
-
-.micro {
-  position: absolute;
-  right: -125px;
-  top: -65.5px;
 }
 
 span {
@@ -173,4 +153,41 @@ footer {
   grid-area: footer;
   justify-self: center;
   align-self: flex-end;
+}
+
+/*  */
+
+.search_wrap {
+  width: 500px;
+  grid-area: searchbar;
+  justify-self: center;
+}
+
+.bar {
+  border: 1px solid silver;
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  width: 75%;
+  border: 0;
+}
+
+input {
+  outline: none;
+  font-size: 35px;
+}
+
+.mag_glass {
+  width: 35px;
+  margin-left: 10px;
+}
+
+.micro_icon {
+  width: 20px;
+  margin-right: 20px;
 }
