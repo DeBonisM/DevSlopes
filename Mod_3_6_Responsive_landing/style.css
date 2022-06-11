@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3›px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid rgb(23, 101, 54); */
+}
+.container {
+  width: 1200px;
+  /* height: 100%; */
+  /* border: 1px solid black; */
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_wrap {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "text1 text1 text1"
+    "cardwrap cardwrap cardwrap"
+    "text2 text2 text2"
+    "footer footer footer";
+}
+/* header start  */
+.header_wrap {
+  grid-area: header;
+  /* border: 1px solid red; */
+  /* width: 100%; */
+}
+.header {
+  display: grid;
+  /* border: 1px solid gold; */
+  height: 100%;
+  align-content: center;
+  justify-items: center;
+  background-image: url("https://i.pinimg.com/originals/96/b5/1e/96b51e8f0d2d503b723b48710b5d89d6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgb(54, 54, 168);
+  padding: 50px 0px;
+  text-align: center;
+  color: azure;
+}
+.p_header {
+  padding: 20px;
+  width: 500px;
+  font-size: 10px;
+}
+.learn_more_butt {
+  letter-spacing: 0.2px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: firebrick;
+  border: none;
+  border-radius: 1px;
+  color: rgba(255, 255, 255, 0.811);
+  padding: 10px;
+}
+
+/* header end  */
+
+/* Txt info 1 start  */
+
+.text_1_wrap {
+  grid-area: text1;
+  /* border: 5px solid green; */
+  height: 150px;
+}
+.text_1_columns {
+  display: grid;
+  height: 100%;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgb(232, 232, 232);
+}
+.text_1_columns p {
+  padding-bottom: 25px;
+  width: 200px;
+  text-align: center;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.text_1_columns h4 {
+  padding-top: 25px;
+  justify-self: center;
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+}
+.text_1 {
+  grid-column: 1 / 2;
+}
+.text__1 {
+  grid-column-start: 2 / 3;
+}
+/* text info 1 end  */
+/* card wrap start  */
+
+.card_wrap {
+  /* border: 1px solid turquoise; */
+  grid-column: 1 / 4;
+  background-color: rgb(54, 54, 168);
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
+.card_container img {
+  max-width: 100%;
+}
+
+.card1,
+.card2,
+.card3 {
+  text-align: center;
+  width: 100px;
+  height: 170px;
+  /* border: 1px solid black; */
+  margin: 10px;
+  border-radius: 2px;
+  background-color: azure;
+}
+
+.card_container h6 {
+  font-weight: bold;
+  font-size: 9px;
+  color: black;
+  padding: 7.5px 0;
+}
+
+.card_container p {
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+}
+
+.img {
+  height: 60px;
+  border-bottom: 0.5px solid #333;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDtVNITHvrKNUZaHUXg7a6meh6f2o8Tv3yzxhSgIAAKVvdnG4kuS5LfxJ4c-bDb3ZbsqA&usqp=CAU");
+  background-size: contain;
+  border-radius: 2px 2px 0 0;
+}
+
+.img2 {
+  background: url("https://codecondo.com/wp-content/uploads/2016/04/10-Things-You-Should-Know-If-You-Want-To-Be-An-iOS-Developer-785X391.jpg");
+  background-size: contain;
+}
+
+.img3 {
+  background: url("https://dvokhk8ohqhd8.cloudfront.net/assets/engineering_types/android/hero_image-fc5b7ec3e1de4498f823edc8ed1d345d16e52de1c2b4be98d3fb26df086df117.svg");
+  background-size: contain;
+}
+
+/* card wrap end  */
+
+/* text 2 start */
+.text_2_wrap {
+  grid-area: text2;
+  /* border: 1px solid pink; */
+}
+
+.text_2 {
+  display: grid;
+  justify-items: center;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.text_2 h5 {
+  padding: 20px;
+}
+
+.text_2 p {
+  padding: 0 50px 25px 50px;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* text 2 end  */
+
+.footer_wrap {
+  grid-area: footer;
+  /* border: 1px solid palevioletred; */
+}
+
+.footer_container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px;
+  color: azure;
+}
+.contact_us {
+  grid-column: 1 / 2;
+  text-align: center;
+  background: #444;
+  padding: 15px;
+  width: 100%;
+}
+
+.contact_us p,
+.all_rad p {
+  font-size: 10px;
+}
+
+.all_rad {
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: #445;
+}
+.all_rad p {
+  padding-top: 0px;
+}
+
+.contact_us h5,
+.all_rad h5 {
+  padding: 25px;
+}
+
+.email {
+  display: block;
+  padding: 15px 0px 0px 0px;
+}
+
+.bottom {
+  color: azure;
+  background: #333;
+  height: 100%;
+  display: flex;
+  width: 100%;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 8px;
+}
+
+.b_span {
+  color: aqua;
+}
