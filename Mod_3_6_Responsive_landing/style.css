@@ -2,7 +2,7 @@
 
 p {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.3›px;
+  letter-spacing: 0.3px;
 }
 
 * {
@@ -13,22 +13,29 @@ p {
 html {
   height: 100%;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
 body {
   height: 100vh;
   width: 100%;
   /* border: 1px solid rgb(23, 101, 54); */
 }
-.container {
-  width: 1200px;
-  /* height: 100%; */
-  /* border: 1px solid black; */
+
+/* .container {
+  max-width: 1400px;
+  height: 100%;
+   border: 1px solid black; 
   margin-top: 25px;
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .main_wrap {
+  max-width: 1400px;
   display: grid;
   grid-template-areas:
     "header header header"
@@ -36,6 +43,10 @@ body {
     "cardwrap cardwrap cardwrap"
     "text2 text2 text2"
     "footer footer footer";
+  margin-top: 25px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* header start  */
 .header_wrap {
@@ -46,7 +57,7 @@ body {
 .header {
   display: grid;
   /* border: 1px solid gold; */
-  height: 100%;
+  /* height: 100%; */
   align-content: center;
   justify-items: center;
   background-image: url("https://i.pinimg.com/originals/96/b5/1e/96b51e8f0d2d503b723b48710b5d89d6.jpg");
@@ -123,10 +134,6 @@ body {
 .card_container {
   display: flex;
   justify-content: center;
-}
-
-.card_container img {
-  max-width: 100%;
 }
 
 .card1,
@@ -210,7 +217,7 @@ body {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 50px;
+  grid-template-rows: 1fr;
   color: azure;
 }
 .contact_us {
@@ -218,7 +225,7 @@ body {
   text-align: center;
   background: #444;
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .contact_us p,
@@ -228,7 +235,7 @@ body {
 
 .all_rad {
   padding: 15px;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   background-color: #445;
 }
@@ -249,17 +256,29 @@ body {
 .bottom {
   color: azure;
   background: #333;
-  height: 100%;
+  height: 2.5em;
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   grid-column: 1 / 4;
-  grid-row: 2;
+  grid-row: 1;
   align-self: center;
   align-items: center;
   justify-content: space-around;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .b_span {
   color: aqua;
+}
+
+@media screen and (max-width: 700px) {
+  .main_wrap {
+    display: grid;
+    grid-template-areas:
+      "header header "
+      "text1 text1 text1"
+      "cardwrap cardwrap cardwrap"
+      "text2 text2 text2"
+      "footer footer footer";
+  }
 }

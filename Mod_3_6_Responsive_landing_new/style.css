@@ -1,0 +1,250 @@
+img {
+  max-width: 100%;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* grid-gap: 20px; */
+}
+
+.hero {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "text1 text11";
+}
+
+.hero--header {
+  grid-area: header;
+  background: white
+    url("https://static.vecteezy.com/system/resources/thumbnails/002/786/299/small_2x/spaceship-fly-over-the-outer-space-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  color: rgb(52, 51, 50);
+  min-height: 150px;
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.hero--header * {
+  background-color: white;
+  padding: 5px;
+}
+
+.top1 {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 0 15px;
+  background-color: beige;
+  text-align: center;
+  justify-content: center;
+}
+.top1 header {
+  grid-column: 1 / -1;
+}
+
+.top1 h6 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.p1-block {
+  grid-column: 1 / 2;
+  display: flex;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+  width: 170px;
+}
+
+.p11-block {
+  justify-self: flex-start;
+  width: 170px;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards {
+  background-color: rgb(54, 54, 168);
+  padding: 1.5em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  background-color: azure;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.img1 {
+  height: 75px;
+  align-content: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.img2 {
+  height: 75px;
+  align-content: center;
+  justify-content: center;
+}
+
+.img3 {
+  height: 75px;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer_wrap {
+  display: grid;
+  color: azure;
+  grid-template-columns: 1fr, 1fr;
+}
+
+/* .footer_container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 50px;
+  color: azure;
+} */
+.contact_us {
+  grid-column: 1 / 2;
+  text-align: center;
+  background: #444;
+  padding: 15px;
+}
+
+.contact_us p,
+.all_rad p {
+  font-size: 10px;
+}
+
+.all_rad {
+  grid-column: 2 / 3;
+  padding: 15px;
+  text-align: center;
+  background-color: #445;
+}
+.all_rad p {
+  padding-top: 0px;
+}
+
+.contact_us h5,
+.all_rad h5 {
+  padding: 25px;
+}
+
+.email {
+  display: block;
+  padding: 15px 0px 0px 0px;
+}
+
+.bottom {
+  color: azure;
+  background: #333;
+  height: 100%;
+  display: flex;
+  grid-column: 1 / 3;
+  grid-row: 2;
+  align-self: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 8px;
+}
+
+.b_span {
+  color: aqua;
+}
+
+@media screen and (max-width: 700px) {
+  * {
+    margin: 0;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "text1"
+      "text11";
+  }
+
+  .p-1 {
+    margin-bottom: 15px;
+  }
+
+  .top1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .cards img {
+    margin-bottom: 15px;
+  }
+
+  .p1-block {
+    justify-self: center;
+  }
+
+  .p11-block {
+    justify-self: center;
+  }
+  .cards {
+    margin: auto;
+    background-color: azure;
+    /* max-width: 250px; */
+  }
+
+  .cards img {
+    object-fit: cover;
+  }
+
+  .card3 img {
+    border: 1px solid black;
+  }
+
+  .footer_wrap {
+    display: grid;
+    grid-template-areas:
+      "contact"
+      "rad"
+      "bottom";
+  }
+  .contact_us {
+    grid-area: contact;
+  }
+  .all_rad {
+    grid-area: rad;
+  }
+
+  .bottom {
+    grid-area: bottom;
+  }
+}
