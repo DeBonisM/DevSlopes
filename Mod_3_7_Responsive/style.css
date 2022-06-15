@@ -7,6 +7,19 @@
   font-size: 22px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #6b6b6b;
+}
+
+p {
+  color: #999;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -36,7 +49,7 @@ body {
 }
 
 .container {
-  background-color: azure;
+  background-color: rgb(49, 50, 30);
   margin: auto;
   padding: 0 5px;
   min-width: 330px;
@@ -82,6 +95,7 @@ header h2 {
 header p {
   text-align: center;
   width: 75%;
+  margin-bottom: 25px;
 }
 
 .hero {
@@ -124,6 +138,7 @@ header p {
   flex: 1;
   padding: 0 15px;
   gap: 50px;
+  margin-bottom: 25px;
 }
 
 .team_cont {
@@ -200,7 +215,7 @@ header p {
 
 footer {
   max-height: max-content;
-  background-color: #222;
+  background-color: #282828;
 }
 
 .copy {
@@ -226,4 +241,27 @@ footer::before {
   height: 2px;
   width: 100%;
   background-color: #555;
+}
+
+@media all and (max-width: 600px) {
+  .top {
+    display: none;
+  }
+
+  header h2 {
+    padding: 35px;
+  }
+
+  .header_p {
+    margin-bottom: 15px;
+  }
+
+  .team_cont {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .contact_us1 {
+    padding: 20vw;
+  }
 }
