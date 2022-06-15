@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  background-color: azure;
+  margin: auto;
+  padding: 0 5px;
+  min-width: 330px;
+  min-height: 100vh;
+  /* max-width: 900px; */
+  display: grid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  padding: 3px;
+  margin-left: 1.2rem;
+}
+
+h1::before {
+  content: "--M-- ";
+  display: inline;
+  height: 25px;
+  width: 25px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 72px;
+  padding: 75px;
+}
+
+header p {
+  text-align: center;
+  width: 75%;
+}
+
+.hero {
+  /* display: grid;
+  justify-content: center;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-areas: "card1 card2 card3"; */
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 25px;
+  gap: 25px;
+}
+
+.cards1,
+.cards2,
+.cards3 {
+  text-align: left;
+  max-width: 250px;
+}
+
+/* .cards1 {
+  grid-area: card1;
+}
+.cards2 {
+  grid-area: card2;
+}
+.cards3 {
+  grid-area: card3;
+} */
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 0 15px;
+  gap: 50px;
+}
+
+.team_cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.team h6 {
+  font-size: 0.5rem;
+}
+
+.team p {
+  font-size: 0.5rem;
+}
+
+.team_card1,
+.team_card2,
+.team_card3,
+.team_card4 {
+  text-align: left;
+  max-width: 100px;
+}
+
+.icon_wrap {
+  padding-top: 5px;
+  display: flex;
+}
+
+.twitter_logo,
+.link_icon,
+.insta_icon {
+  max-width: 10px;
+}
+
+.icon_wrap a + a {
+  margin-left: 2.5px;
+}
+
+.contact_us {
+  background-color: #222;
+  color: azure;
+}
+
+.contact_us a {
+  font-size: 0.5rem;
+  color: azure;
+}
+
+.contact_us_wrap address,
+.contact_us_wrap span {
+  font-size: 12px;
+}
+
+.contact_us_wrap p:first-of-type {
+  margin-bottom: 5px;
+}
+
+.footer_ul {
+  justify-content: center;
+}
+
+.contact_us1 {
+  text-align: center;
+  flex: 1 0 33.33%;
+  padding: 100px;
+}
+
+.contact_us_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  max-height: max-content;
+  background-color: #222;
+}
+
+.copy {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: small;
+}
+
+.copy p {
+  font-size: small;
+  font-weight: 900;
+}
+
+footer::before {
+  content: "";
+  display: block;
+  flex-wrap: wrap;
+  height: 2px;
+  width: 100%;
+  background-color: #555;
+}
