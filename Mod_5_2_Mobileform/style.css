@@ -1,0 +1,196 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+  border-width: 0px 0px 1px 0px;
+  border-color: grey;
+  border-style: solid;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+fieldset {
+  border: none;
+  margin: auto;
+  max-width: 260px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+select {
+  font-size: 0.8rem;
+}
+
+select,
+option,
+fieldtext {
+  color: grey;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 300px;
+  max-height: 700px;
+  margin: 0px auto;
+  justify-content: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.color-bar {
+  height: 20px;
+  length: 100%;
+  background-color: lightblue;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.top div:last-child {
+  margin-right: 15px;
+}
+
+.square,
+.circle,
+.triangle {
+  display: inline-block;
+  max-width: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: relative;
+  display: inline-flex;
+  background-color: skyblue;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+h1 {
+  color: white;
+  display: inline-block;
+  margin-left: 50px;
+  width: fit-content;
+  padding: 15px;
+}
+.sandwich {
+  color: white;
+  position: absolute;
+  left: 18px;
+  align-self: center;
+}
+
+.glass img {
+  position: absolute;
+  max-width: 25px;
+  align-self: center;
+  bottom: 30%;
+  right: 10%;
+}
+
+.dots img {
+  max-width: 25px;
+  align-self: center;
+  position: absolute;
+  bottom: 30%;
+  right: 1%;
+}
+
+.phone-con,
+.name-con,
+.address-con,
+.email-con,
+.birthday-con,
+.state-con {
+  display: flex;
+  gap: 5px;
+}
+
+.phone-con img,
+.name-con img,
+.address-con img,
+.email-con img,
+.birthday-con img {
+  align-self: center;
+  max-width: 15px;
+  margin-bottom: 15px;
+}
+
+.state-con,
+.city-con {
+  margin-left: 20px;
+}
+
+.name,
+.address,
+.state,
+.zip {
+  background-color: lightgrey;
+}
+.zip,
+.label {
+  width: 80px;
+}
+.name,
+.birthday,
+.address,
+.city,
+.email {
+  width: 100%;
+}
+
+.birthday-con {
+  display: flex;
+}
+
+.birthday {
+  flex: 1;
+}
+
+button {
+  background-color: lightgrey;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  padding: 10px;
+  margin-left: auto;
+}
