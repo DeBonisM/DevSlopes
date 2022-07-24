@@ -436,3 +436,24 @@ footer .footer-col {
   cursor: pointer;
   z-index: 100;
 }
+
+.sticky,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.sticky {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  width: 50%;
+  bottom: 0px;
+  border-radius: 5px;
+  z-index: 99;
+  background-color: #55edbf;
+  overflow: hidden;
+}

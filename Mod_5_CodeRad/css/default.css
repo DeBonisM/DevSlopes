@@ -27,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   color: var(--font-color-base);
   margin: 0;
   padding-left: 0;
+  min-height: 100%;
 }
 
 *,
