@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 img {
@@ -13,6 +14,10 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  padding: 5px 10px;
 }
 
 header {
