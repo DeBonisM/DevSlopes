@@ -8,26 +8,26 @@ header {
   justify-content: space-between;
   flex: 1;
   width: 100%;
-  padding: 15px 25px;
+  padding: 1rem 1.25rem;
 }
 
 header,
-.menu-list ol {
+.menu-list ul {
   display: flex;
-  gap: 10px;
+  gap: var(--size-10);
   align-items: center;
 }
 
 header img {
-  width: 100px;
+  width: var(--size-100);
 }
 
 .menu-list li button {
   cursor: pointer;
   outline: none;
   border: 0;
-  border-radius: 5px;
-  padding: 5px 15px;
+  border-radius: var(--size-5);
+  padding: var(--size-5) var(--size-14);
   background-color: blue;
 }
 
@@ -37,7 +37,7 @@ header img {
   align-items: center;
   align-content: space-between;
   justify-content: space-between;
-  padding: 5px 20px;
+  padding: var(--size-5) var(--size-20);
   height: 100%;
 }
 
@@ -58,13 +58,12 @@ header img {
 
 .hero-text .text-one .text-one-b {
   display: flex;
-  gap: 15px;
+  gap: var(--size-14);
 }
 
 .hero-icons {
   display: grid;
   margin: auto;
-
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -72,8 +71,8 @@ header img {
 
 .hero-icons > span img {
   border: 1px solid transparent;
-  padding: 5px;
+  padding: var(--size-5);
   border-radius: 50%;
   background-color: white;
-  width: 40px;
+  width: var(--size-40);
 }
