@@ -31,6 +31,7 @@ header img {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: var(--size-5) var(--size-20);
 }
 
@@ -51,16 +52,94 @@ header img {
 .hero-icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  min-width: 150px;
-  flex-wrap: wrap;
-  justify-items: flex-end;
+  justify-items: center;
+  align-items: center;
+  padding: 50px 50px;
 }
 
-.hero-icons > span img {
-  border: 1px solid transparent;
+.hero-icons img {
+  border: 0px solid transparent;
   padding: var(--size-5);
   border-radius: 50%;
   background-color: white;
+  width: var(--size-100);
+}
+
+.img-one {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  right: 5rem;
+}
+
+.hero-icons > .img-one {
   width: var(--size-50);
+}
+
+.img-two {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 3.5rem;
+  right: 5rem;
+}
+
+.img-three {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: -5rem;
+  left: 10rem;
+}
+.img-four {
+  width: 100px;
+  height: 100px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 5rem;
+  right: 10rem;
+}
+.img-four img {
+}
+.img-five {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: -2rem;
+  left: 5rem;
+}
+.img-six {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 5rem;
+  left: -5rem;
+}
+
+.img-seven {
+  width: 80px;
+  height: 80px;
+  border: 0px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  position: relative;
+  top: 3rem;
+  left: 10rem;
 }
