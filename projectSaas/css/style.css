@@ -12,7 +12,7 @@ header {
 header,
 .menu-list ul {
   display: flex;
-  gap: var(--size-10);
+  gap: var(--size-20);
   align-items: center;
 }
 
@@ -35,7 +35,7 @@ header img {
 }
 
 .hero-wrap {
-  padding-top: var(--size-50);
+  margin: auto;
 }
 
 .hero h1 {
@@ -62,15 +62,17 @@ header img {
 .hero-icons {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 50px 50px;
 }
 
 .hero-icons span {
   display: inline-block;
   border: 1px solid transparent;
-  padding: var(--size-10);
+  padding: var(--size-16);
   border-radius: 50%;
   position: relative;
-  background-color: white;
 }
 
 .hero-icons img {
@@ -90,7 +92,7 @@ header img {
 
 .img-three {
   top: -4rem;
-  left: 5rem;
+  left: 9rem;
 }
 .img-four {
   top: 7rem;
@@ -108,7 +110,7 @@ header img {
 
 .img-seven {
   top: 5rem;
-  left: 5rem;
+  left: 9rem;
 }
 
 /* .pal {
